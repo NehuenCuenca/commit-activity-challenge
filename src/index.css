@@ -17,6 +17,10 @@ html {
   padding: 0;
 }
 
+ul, ol {
+  list-style-type: none;
+}
+
 
 .container-principal {
   width: 100vw;
