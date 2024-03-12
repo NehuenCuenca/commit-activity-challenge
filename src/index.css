@@ -1,0 +1,28 @@
+:root {
+  --titleBlackStrong: #333333;
+}
+
+html {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+.container-principal {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 1.5rem;
+  color: var(--titleBlackStrong);
+}
+

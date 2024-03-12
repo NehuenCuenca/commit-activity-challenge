@@ -1,0 +1,12 @@
+
+
+.week-item {
+    list-style-type: none;
+}
+
+.days-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2px
+}

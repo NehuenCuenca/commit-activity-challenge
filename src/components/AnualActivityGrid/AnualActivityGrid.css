@@ -1,0 +1,37 @@
+
+.container-activity{
+    display: grid;
+    grid-template-columns: 5vw 85vw;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    ". months"
+    "days activity"
+    ;
+    gap: 0 .6rem;
+}
+
+.days-guide {
+    grid-area: days;
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: end;
+}
+
+.months-guide {
+    grid-area: months;
+    width: 100%;
+    padding: .2rem 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.anual-list { 
+    grid-area: activity;
+    display: flex;
+    flex-direction: row;
+    column-gap: 2px;
+}
