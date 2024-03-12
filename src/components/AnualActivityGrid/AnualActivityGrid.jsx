@@ -1,4 +1,5 @@
 import { getMonths } from "../../helpers/dates";
+import DayActivity from "../DayActivity/DayActivity";
 import WeekActivityItem from "../WeekActivityItem/WeekActivityItem";
 import "./AnualActivityGrid.css";
 
@@ -28,6 +29,22 @@ const AnualActivityGrid = ({ activity }) => {
         {activityWithConvertedTimestamps.map((weekActivity, index) => (
           <WeekActivityItem key={index} weekActivity={weekActivity} />
         ))}
+      </ul>
+      
+      <ul className="colors-guide">
+        <li>
+          <span>Less</span>
+        </li>
+
+        <DayActivity initialColor={'--lightest'}/>
+        <DayActivity initialColor={'--lighter'}/>
+        <DayActivity initialColor={'--base'}/>
+        <DayActivity initialColor={'--darker'}/>
+        <DayActivity initialColor={'--darkest'}/>
+
+        <li>
+          <span>More</span>
+        </li>
       </ul>
     </div>
   );

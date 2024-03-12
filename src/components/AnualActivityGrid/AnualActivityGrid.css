@@ -2,17 +2,17 @@
 .container-activity{
     display: grid;
     grid-template-columns: 5vw 85vw;
-    grid-template-rows: auto auto;
+    grid-template-rows: repeat(3, auto);
     grid-template-areas: 
     ". months"
     "days activity"
+    ". colors"
     ;
-    gap: 0 .6rem;
+    gap: .6rem;
 }
 
 .days-guide {
     grid-area: days;
-    list-style-type: none;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -24,7 +24,6 @@
     grid-area: months;
     width: 100%;
     padding: .2rem 0;
-    list-style-type: none;
     display: flex;
     justify-content: space-around;
 }
@@ -34,4 +33,11 @@
     display: flex;
     flex-direction: row;
     column-gap: 2px;
+}
+
+.colors-guide {
+    grid-area: colors;
+    display: flex;
+    column-gap: .2rem;
+    justify-self: end;
 }
